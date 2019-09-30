@@ -8,49 +8,598 @@
     padding:0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
  body{
-    background-color: gray;
-
-    div{
+    background-color:#fafafa;
+    #header{
+        background-image: url('../img/img\ POLARIS.jpg');
         width:100%;
-        height: 100vh;
-        color:white;
-        font-family: tahoma;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        height:100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:relative;
+        background-position: center;
+        .filtroA{
+            background-color: rgba(33,33,33,0.2);
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        .container{
+            position: relative;
+            z-index: 1;
+            padding-top: 30px;
+            width:100%;
+            .topHeader{
+                width:100%;
+                height:15vh;
+                .left{
+                    width:25%;
+                    float: left;
+                    text-align: left;
+                    height: 100%;
+                }
+                .right{
+                    width:75%;
+                    height: 100%;
+                    float: left;
+                    text-align: right;
+                    a{
+                        font-family: 'Fira Sans', sans-serif;
+                        padding:10px 40px;
+                    }
+                }
+            }
+            .middle{
+                width:100%;
+                height:70vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                position: relative;
+                z-index:1;
+            }
+            .bottom{
+                width:100%;
+                height:15vh;
+                position: relative;
+                z-index:1;
+                p{
+                    font-family: 'Fira Sans','sans-serif';
+                    font-size: 12pt;
+                    text-align: center;
+                    color:white;
+                    a{
+                        padding-top: 20px;
+                    }
+                }
+                
+            }
+        }
+    }  
+    #conhecaPolaris{
+        width:100%;
+        h3{
+            color:#3f6c93;
+            font-family: 'Fira Sans','sans-serif';
+            font-size:15pt;
+            position:relative;
+            z-index:2;
+            text-align: center;
+            padding-top:90px;
+            padding-bottom:50px;
+        }
+        .container{
+            padding-bottom:120px;
+            .row{
+                div{
+                    padding-right: 10%;
+                    h2{
+                        color:#25355f;
+                        font-family: 'Fira Sans','sans-serif';
+                        font-style: italic;
+                        font-size:24pt;
+                        text-align: left;
+                    }
+                    p{
+                        font-family: 'Fira Sans';
+                        color:#757575;
+                        font-size:14pt;
+                        text-align: left;
+                    }
+                    ul{
+                        list-style: none;
+                        font-family: 'Fira Sans';
+                        color:#757575;
+                        font-size:14pt;
+                        text-align: left;
+                        width:100%; 
+                        li{
+                            margin: 0;
+                            padding:0;
+                            .number{
+                                float:left;
+                                margin: 0;
+                                padding-right: 25px;
+                                font-size: 15pt;
+                                clear:right;
+                                width: 10%;
+                                margin-bottom: 25px;
+                                display:flex;
+                                flex-direction: column-reverse;
+                                align-items: center;
+                                justify-content: center;
+                                height:50px;
+                                font-size:20pt;
+                            }
+                            .msg{
+                                border-left:2px solid #4b8bc9;
+                                float:left;
+                                padding:0;
+                                padding-left: 25px;
+                                display:block;
+                                width: 90%;
+                                margin-bottom: 25px;
+                                height:50px;
+                            }   
+                        }   
+                    }
+                   .data{
+                       color:#4b8fcb;
+                       font-size: 12pt;
+                       font-weight: bold;
+                   }
+                }
+            }
         }
     }
-/* Telefones em paisagem e abaixo */
-@media (max-width: 480px) {
-    body{
-        background-color: red;
-        div{
-            width:100%;
+
+    #galeria{
+        background-color:#fafafa;
+        width:100%;
+        position: relative;
+        h3{
+            text-align: center;
+            color:#3f6f93;
+            font-family: 'Fira Sans';
+            font-size: 15pt;
+            padding:60px;
         }
+        .container{
+            .slide{
+                padding-bottom: 90px;
+                .item1{
+                    width:100%;
+                    height:700px;
+                    background-image: url('../img/Interna_Living.jpg');
+                    background-size: cover;
+                    background-position: center;
+                }
+                .item2{
+                    width:100%;
+                    height:700px;
+                    background-color:blue;
+                }
+                .item3{
+                    width:100%;
+                    height:700px;
+                    background-color:red;
+                }
+            }
+        }
+        
+        .prev{
+            transform: rotate(180deg);
+            position: absolute;
+            top:46%;
+            left:50px;
+        }
+        .prox{
+            position: absolute;
+            top:46%;
+            right:50px;
+        }    
+    }
+
+
+    #parallax{
+        background-image: url('../img/img\ c3.jpg');
+        height:800px;
+        width:100%;
+        background-attachment: fixed;
+        background-size: 100% 800px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position:relative;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .filtro1{
+            position:absolute;
+            width: 100%;
+            height: 800px;
+            top:0;
+            left:0;
+            background-color:rgba(92,96,108,0.3);
+        }
+        .filtro2{
+            position:absolute;
+            width: 100%;
+            height: 800px;
+            top:0;
+            left:0;
+            background-color:rgba(87,89,95,0.3);
+        }
+        .filtro3{
+            position:absolute;
+            width: 100%;
+            height: 800px;
+            top:0;
+            left:0;
+            background-color:rgba(109,109,110,0.15);
+        }
+        p{
+            font-family: 'Fira Sans', sans-serif;
+            font-style: italic;
+            font-size: 28pt;
+            color:white;
+            position:relative;
+            z-index:3;
+            text-shadow: 1px 1px  black;
+            padding-right: 100px;
+        }
+        a{
+            position:relative;
+            z-index:3;
+            color:#0e3163;
+            padding:10px 30px;
+            font-size: 22pt;
+        }
+    }
+    #planta{
+        width:100%;
+        height:100vh;
+        background-color: red;
+    }
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 1199px) {
+    body{
+        header{
+            background-size: 100% 100%;
+            .container{
+                .topHeader{
+                    .left{
+                        width:50%;
+                        img{
+                            width:none;
+                        }
+                    }
+                    .right{
+                        width:50%;
+                        a{
+                            font-size:15px;
+                            padding:12px 50px;
+                        }
+                    }
+                }
+                .middle{
+                    height:65vh;
+                    img{
+                        width:300px;
+                    }
+                }
+                .bottom{
+                    height:20vh;
+                    padding-bottom: 10px;
+                    
+                }
+            }
+        }  
+        #galeria{
+            h3{
+                padding:30px;
+            }
+            .container{
+                .slide{
+                    .item1{
+                        height:550px;
+                    }
+                    .item2{
+                        height:550px;
+                    }
+                    .item3{
+                        height:550px;
+                    }
+                }
+            }
+            
+            .prev{;
+                top:55%;
+                left:50px;
+            }
+            .prox{
+                top:55%;
+                right:50px;
+            }    
+        }  
     }
 }
 
 /* Telefones em paisagem a tablet em retrato */
 @media (min-width: 481px) and(max-width: 767px) {
     body{
-        background-color: yellow;
-        div{
+        header{
+            background-size: 130% 100%;
+            .container{
+                .topHeader{
+                    .left{
+                        width:50%;
+                        img{
+                            width:none;
+                        }
+                    }
+                    .right{
+                        width:50%;
+                        a{
+                            font-size:15px;
+                            padding:12px 50px;
+                        }
+                    }
+                }
+                .middle{
+                    height:65vh;
+                    img{
+                        width:300px;
+                    }
+                }
+                .bottom{
+                    height:20vh;
+                    padding-bottom: 10px;
+                    
+                }
+            }
+        } 
+        #conhecaPolaris{
             width:100%;
-        }
-    }
-}
-/* Tablet em retrato a paisagem e desktop */
-@media (min-width: 768px) and (max-width: 1199px) {
-    body{
-        background-color: green;
-        div{
-            width:100%;
-        }
+            h3{
+                padding-top:50px;
+                padding-bottom:20px;
+            }
+            .container{
+                padding-bottom:50px;
+                .row{
+                    div{
+                        padding-right:0;
+                        h2{
+                            font-size:18pt;
+                            text-align: center;
+                            padding-bottom:20px;
+                            margin:0;
+                        }
+                        p{
+                            font-size:12pt;
+                        }
+                        ul{;
+                            color:#757575;
+                            font-size:12pt;
+                            text-align: left;; 
+                            li{
+                                .number{
+                                    float:left;
+                                    margin: 0;
+                                    padding-right: 25px;
+                                    padding-left: 18px;
+                                    width: 15%;
+                                    margin-bottom: 25px;
+                                    height:40px;
+                                    font-size:20pt;
+                                }
+                                .msg{
+                                    border-left:2px solid #4b8bc9;
+                                    float:left;
+                                    padding:0;
+                                    padding-left: 25px;
+                                    display:block;
+                                    width: 80%;
+                                    margin-bottom: 25px;
+                                    height:40px;
+                                }   
+                            }   
+                        }
+                       .data{
+                           color:#4b8fcb;
+                           font-size: 12pt;
+                           font-weight: bold;
+                           text-align: center;
+                           margin:0;
+                           padding:0;
+                       }
+                       .data2{
+                        text-align: center;
+                        padding-bottom: 20px;
+                       }
+                    }
+                }
+            }
+        }  
+        
+        
+        #galeria{
+
+            h3{
+                padding:30px;
+            }
+            .container{
+                
+                .slide{
+                    .item1{
+                        height:400px;
+                    }
+                    .item2{
+                        height:400px;
+                    }
+                    .item3{
+                        height:400px;
+                    }
+                }
+            }
+            
+            .prev{
+                transform: rotate(180deg);
+                position: absolute;
+                top:55%;
+                left:50px;
+            }
+            .prox{
+                position: absolute;
+                top:55%;
+                right:50px;
+            }    
+        }  
     }
 }
 
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) {
+    body{
+        header{
+            background-size: 200% 100%;
+            .container{
+                .topHeader{
+                    .left{
+                        width:50%;
+                        img{
+                            width:140px;
+                        }
+                    }
+                    .right{
+                        width:50%;
+                        a{
+                            font-size:10px;
+                            padding:0;
+                            width:149px;
+                        }
+                    }
+                }
+                .middle{
+                    height:65vh;
+                    img{
+                        width:240px;
+                    }
+                }
+                .bottom{
+                    height:20vh;
+                    padding-bottom: 10px;   
+                }
+            }
+        }
+
+
+        #conhecaPolaris{
+            width:100%;
+            h3{
+                padding-top:50px;
+                padding-bottom:20px;
+            }
+            .container{
+                padding-bottom:50px;
+                .row{
+                    div{
+                        padding-right:0;
+                        h2{
+                            font-size:18pt;
+                            text-align: center;
+                            padding-bottom:20px;
+                            margin:0;
+                        }
+                        p{
+                            font-size:12pt;
+                        }
+                        ul{;
+                            color:#757575;
+                            font-size:12pt;
+                            text-align: left;; 
+                            li{
+                                .number{
+                                    float:left;
+                                    margin: 0;
+                                    padding-right: 25px;
+                                    padding-left: 18px;
+                                    width: 15%;
+                                    margin-bottom: 25px;
+                                    height:40px;
+                                    font-size:20pt;
+                                }
+                                .msg{
+                                    border-left:2px solid #4b8bc9;
+                                    float:left;
+                                    padding:0;
+                                    padding-left: 25px;
+                                    display:block;
+                                    width: 80%;
+                                    margin-bottom: 25px;
+                                    height:40px;
+                                }   
+                            }   
+                        }
+                       .data{
+                           color:#4b8fcb;
+                           font-size: 12pt;
+                           font-weight: bold;
+                           text-align: center;
+                       }
+                       .data2{
+                        text-align: center;
+                       }
+                    }
+                }
+            }
+        }  
+
+        #galeria{
+
+            h3{
+                padding:30px;
+            }
+            .container{
+                
+                .slide{
+                    .item1{
+                        height:270px;
+                    }
+                    .item2{
+                        height:270px;
+                    }
+                    .item3{
+                        height:270px;
+                    }
+                }
+            }
+            
+            .prev{
+                transform: rotate(180deg);
+                position: absolute;
+                top:60%;
+                left:50px;
+            }
+            .prox{
+                position: absolute;
+                top:60%;
+                right:50px;
+            }    
+        }  
+          
+    }
+}
 
 
