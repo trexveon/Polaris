@@ -12,7 +12,42 @@ html{
     scroll-behavior: smooth;
 }
  body{
-    background-color:#fafafa;
+    background-color:white;
+        
+        .topHeader{
+            width:100%;
+            
+            position:fixed;
+            left:0;
+            top:0;
+            z-index:9;
+            transition:0.5s;
+            padding-top:30px;
+            padding-bottom:30px;
+            .left{
+                width:25%;
+                float: left;
+                text-align: left;
+                height: 100%;
+            }
+            .right{
+                width:75%;
+                height: 100%;
+                float: left;
+                text-align: right;
+                a{
+                    font-family: 'Fira Sans', sans-serif;
+                    padding:10px 40px;
+                }
+            }
+            
+        
+    }
+    .scroll{
+        background-color: hsla(0,0%,100%,.95);
+        box-shadow: 0 6px 7.84px 0.16px rgba(33,33,33,.1);
+    }
+
     #header{
         background-image: url('../img/img\ POLARIS.jpg');
         width:100%;
@@ -34,29 +69,23 @@ html{
             z-index: 1;
             padding-top: 30px;
             width:100%;
-            .topHeader{
-                width:100%;
-                height:15vh;
-                .left{
-                    width:25%;
-                    float: left;
-                    text-align: left;
-                    height: 100%;
-                }
-                .right{
-                    width:75%;
-                    height: 100%;
-                    float: left;
-                    text-align: right;
-                    a{
-                        font-family: 'Fira Sans', sans-serif;
-                        padding:10px 40px;
-                    }
-                }
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            .scroll{
+                background-color: hsla(0,0%,100%,.95);
+                box-shadow: 0 6px 7.84px 0.16px rgba(33,33,33,.1);
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
             }
+            
             .middle{
                 width:100%;
-                height:70vh;
+                height:85vh;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -81,7 +110,8 @@ html{
                 
             }
         }
-    }  
+    } 
+
     #conhecaPolaris{
         width:100%;
         h3{
@@ -208,11 +238,11 @@ html{
 
 
     #parallax{
-        background-image: url('../img/img\ c3.jpg');
-        height:800px;
+        background-image: url('../img/PRLLX\ CTA.png');;
         width:100%;
+        height:500px;
         background-attachment: fixed;
-        background-size: 100% 800px;
+        background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
         position:relative;
@@ -247,7 +277,8 @@ html{
         }
         p{
             font-family: 'Fira Sans', sans-serif;
-            font-style: italic;
+            font-style: italic ;
+            font-weight: 900; /* 100, 200, 300, ... 900, normal, bold, bolder, lighter */
             font-size: 28pt;
             color:white;
             position:relative;
@@ -259,38 +290,118 @@ html{
             position:relative;
             z-index:3;
             color:#0e3163;
-            padding:10px 30px;
+            padding:10px 40px;
             font-size: 22pt;
         }
     }
-    #planta{
-        width:100%;
-        height:100vh;
-        background-color: red;
+    #plantas{
+        h3{
+            font-family: 'Fira Sans';
+            font-size:20pt;
+            color:#3f6c93;
+            padding-top:90px;
+            padding-bottom:60px;
+        }
+        .container{
+            .row{
+                position:relative;
+                height:492px;
+                margin-bottom: 150px;
+                .col-3{
+                    padding-left: 50px;
+                    font-size:14px;
+                    color:#757575;
+                    font-family: 'Fira Sans';
+                }
+                .col-2{
+                    margin-top:10px;
+                    .vagagaragem{
+                        font-size:14px;
+                        float:left;
+                        font-family: 'Fira Sans';
+                    }
+                    font-size:14px;
+                        float:left;
+                        font-family: 'Fira Sans';
+                }
+                div{
+                    .img1{
+                        position:absolute;
+                        bottom:0;
+                        right:0;
+                    }
+                    .img2{
+                        position:absolute;
+                        bottom:0;
+                        left:0;
+                    }
+                    div{
+                        float:left;  
+                    }
+                    .box1{
+                        border-right: 2px solid #4b8fcb;
+                        font-family: 'Fira Sans';
+                        font-size:20pt;
+                        color: #4b8fcb;
+                        padding-right:10px;
+                        margin-right:10px;
+                    }
+                    span{
+                        display:inline;
+                        font-family: 'Fira Sans';
+                        font-size:12px;
+                    }
+                    .apto{
+                        color: #4f89c8;
+                        font-weight:bolder;
+                        font-size:12px;
+                        font-family: 'Fira Sans';
+                    }
+                }
+            }
+        }
     }
 }
 
 /* Tablet em retrato a paisagem e desktop */
 @media (min-width: 768px) and (max-width: 1199px) {
     body{
+        .topHeader{
+            width:100%;
+            position:fixed;
+            left:0;
+            top:0;
+            z-index:9;
+            transition:0.5s;
+            padding-top:30px;
+            padding-bottom:30px;
+            .left{
+                width:25%;
+                float: left;
+                text-align: left;
+                height: 100%;
+            }
+            .right{
+                width:75%;
+                height: 100%;
+                float: left;
+                text-align: right;
+                a{
+                    font-family: 'Fira Sans', sans-serif;
+                    padding:10px 40px;
+                }
+            }
+            
+        
+    }
+    .scroll{
+        background-color: hsla(0,0%,100%,.95);
+        box-shadow: 0 6px 7.84px 0.16px rgba(33,33,33,.1);
+    }
         header{
             background-size: 100% 100%;
             .container{
-                .topHeader{
-                    .left{
-                        width:50%;
-                        img{
-                            width:none;
-                        }
-                    }
-                    .right{
-                        width:50%;
-                        a{
-                            font-size:15px;
-                            padding:12px 50px;
-                        }
-                    }
-                }
+                
                 .middle{
                     height:65vh;
                     img{
@@ -331,30 +442,145 @@ html{
                 right:50px;
             }    
         }  
+
+        #parallax{
+            background-image: url('../img/PRLLX\ CTA.png');;
+            height:420px;
+            position:relative;
+            display:flex;;
+    
+            .filtro1{
+                height: 420px;
+            }
+            .filtro2{
+                height: 420px;
+            }
+            .filtro3{
+                height: 420px;
+            }
+            p{
+                font-size: 22pt;
+            }
+            a{
+                padding:10px 40px;
+                font-size: 18pt;
+            }
+        }
+
+        #plantas{
+            h3{
+                font-family: 'Fira Sans';
+                font-size:20pt;
+                color:#3f6c93;
+                padding-top:90px;
+                padding-bottom:60px;
+            }
+            .container{
+                .row{
+                    position:relative;
+                    height:492px;
+                    margin-bottom: 150px;
+                    .col-3{
+                        padding-left: 50px;
+                        font-size:14px;
+                        color:#757575;
+                        font-family: 'Fira Sans';
+                    }
+                    .col-2{
+                        margin-top:10px;
+                        .vagagaragem{
+                            font-size:14px;
+                            float:left;
+                            font-family: 'Fira Sans';
+                        }
+                        font-size:14px;
+                            float:left;
+                            font-family: 'Fira Sans';
+                    }
+                    div{
+                        .img1{
+                            position:absolute;
+                            bottom:0;
+                            right:0;
+                            width:200px;
+                        }
+                        .img2{
+                            position:absolute;
+                            bottom:0;
+                            left:0;
+                        }
+                        div{
+                            float:left;  
+                        }
+                        .box1{
+                            border-right: 2px solid #4b8fcb;
+                            font-family: 'Fira Sans';
+                            font-size:20pt;
+                            color: #4b8fcb;
+                            padding-right:10px;
+                            margin-right:10px;
+                        }
+                        span{
+                            display:inline;
+                            font-family: 'Fira Sans';
+                            font-size:12px;
+                        }
+                        .apto{
+                            color: #4f89c8;
+                            font-weight:bolder;
+                            font-size:12px;
+                            font-family: 'Fira Sans';
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 /* Telefones em paisagem a tablet em retrato */
 @media (min-width: 481px) and(max-width: 767px) {
     body{
+        .topHeader{
+            width:100%;
+            position:fixed;
+            left:0;
+            top:0;
+            z-index:9;
+            transition:0.5s;
+            padding-top:30px;
+            padding-bottom:30px;
+            .left{
+                width:50%;
+                float: left;
+                text-align: left;
+                height: 100%;
+                img{
+                    width:none;
+                }
+            }
+            .right{
+                width:50%;
+                height: 100%;
+                float: left;
+                text-align: right;
+                a{
+                    font-family: 'Fira Sans', sans-serif;
+                    font-size:15px;
+                    padding:12px 50px;
+                }
+            }
+            
+        
+    }
+    .scroll{
+        background-color: hsla(0,0%,100%,.95);
+        box-shadow: 0 6px 7.84px 0.16px rgba(33,33,33,.1);
+    }
         header{
             background-size: 130% 100%;
             .container{
-                .topHeader{
-                    .left{
-                        width:50%;
-                        img{
-                            width:none;
-                        }
-                    }
-                    .right{
-                        width:50%;
-                        a{
-                            font-size:15px;
-                            padding:12px 50px;
-                        }
-                    }
-                }
+                
                 .middle{
                     height:65vh;
                     img{
@@ -465,32 +691,158 @@ html{
                 right:50px;
             }    
         }  
+
+        #parallax{
+            height:420px;    
+            .filtro1{
+                height: 420px;
+            }
+            .filtro2{
+                height: 420px;
+            }
+            .filtro3{
+                height: 420px;
+            }
+            p{
+                font-size: 16pt;
+                padding-right: 10px;
+            }
+            a{
+                padding:5px 20px;
+                font-size: 18pt;
+            }
+        }
+
+        #plantas{
+            h3{
+                font-family: 'Fira Sans';
+                font-size:20pt;
+                color:#3f6c93;
+                padding-top:90px;
+                padding-bottom:60px;
+            }
+            .container{
+                .row{
+                    position:relative;
+                    height:492px;
+                    margin-bottom: 150px;
+                    .col-3{
+                        padding-left: 50px;
+                        font-size:14px;
+                        color:#757575;
+                        font-family: 'Fira Sans';
+                    }
+                    .col-2{
+                        margin-top:10px;
+                        .vagagaragem{
+                            font-size:14px;
+                            float:left;
+                            font-family: 'Fira Sans';
+                        }
+                        font-size:14px;
+                            float:left;
+                            font-family: 'Fira Sans';
+                    }
+                    div{
+                        .img1{
+                            position:absolute;
+                            bottom:0;
+                            right:0;
+                        }
+                        .img2{
+                            position:absolute;
+                            bottom:0;
+                            left:0;
+                        }
+                        div{
+                            float:left;  
+                        }
+                        .box1{
+                            border-right: 2px solid #4b8fcb;
+                            font-family: 'Fira Sans';
+                            font-size:20pt;
+                            color: #4b8fcb;
+                            padding-right:10px;
+                            margin-right:10px;
+                        }
+                        span{
+                            display:inline;
+                            font-family: 'Fira Sans';
+                            font-size:12px;
+                        }
+                        .apto{
+                            color: #4f89c8;
+                            font-weight:bolder;
+                            font-size:12px;
+                            font-family: 'Fira Sans';
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 
 /* Telefones em paisagem e abaixo */
 @media (max-width: 480px) {
+    .topHeader{
+        .left{
+            width:50%;
+            img{
+                width:140px;
+            }
+        }
+        .right{
+            width:50%;
+            a{
+                font-size:10px;
+                padding:0;
+                width:149px;
+            }
+        }
+    }
+    .topHeader{
+        width:100%;
+        position:fixed;
+        left:0;
+        top:0;
+        z-index:9;
+        transition:0.5s;
+        padding-top:30px;
+        padding-bottom:30px;
+        .left{
+            width:50%;
+            float: left;
+            text-align: left;
+            img{
+                width:140px;
+            }
+        }
+        .right{
+            width:50%;
+            height: 100%;
+            float: left;
+            text-align: right;
+            a{
+                font-family: 'Fira Sans', sans-serif;
+                font-size:10px;
+                padding:0;
+                width:149px;
+            }
+        }
+        
+    
+}
+.scroll{
+    background-color: hsla(0,0%,100%,.95);
+    box-shadow: 0 6px 7.84px 0.16px rgba(33,33,33,.1);
+}
     body{
         header{
             background-size: 200% 100%;
             .container{
-                .topHeader{
-                    .left{
-                        width:50%;
-                        img{
-                            width:140px;
-                        }
-                    }
-                    .right{
-                        width:50%;
-                        a{
-                            font-size:10px;
-                            padding:0;
-                            width:149px;
-                        }
-                    }
-                }
+                
                 .middle{
                     height:65vh;
                     img{
@@ -598,7 +950,97 @@ html{
                 right:50px;
             }    
         }  
-          
+
+        #parallax{
+            height:620px; 
+            background-size:200% 40%; 
+
+            .filtro1{
+                height: 420px;
+            }
+            .filtro2{
+                height: 420px;
+            }
+            .filtro3{
+                height: 420px;
+            }
+            p{
+                font-size: 12pt;
+                padding-right: 10px;
+            }
+            a{
+                padding:5px 12px;
+                font-size: 12pt;
+            }
+        }
+        
+        #plantas{
+            h3{
+                font-family: 'Fira Sans';
+                font-size:20pt;
+                color:#3f6c93;
+                padding-top:90px;
+                padding-bottom:60px;
+            }
+            .container{
+                .row{
+                    position:relative;
+                    height:492px;
+                    margin-bottom: 150px;
+                    .col-3{
+                        padding-left: 50px;
+                        font-size:14px;
+                        color:#757575;
+                        font-family: 'Fira Sans';
+                    }
+                    .col-2{
+                        margin-top:10px;
+                        .vagagaragem{
+                            font-size:14px;
+                            float:left;
+                            font-family: 'Fira Sans';
+                        }
+                        font-size:14px;
+                            float:left;
+                            font-family: 'Fira Sans';
+                    }
+                    div{
+                        .img1{
+                            position:absolute;
+                            bottom:0;
+                            right:0;
+                        }
+                        .img2{
+                            position:absolute;
+                            bottom:0;
+                            left:0;
+                        }
+                        div{
+                            float:left;  
+                        }
+                        .box1{
+                            border-right: 2px solid #4b8fcb;
+                            font-family: 'Fira Sans';
+                            font-size:20pt;
+                            color: #4b8fcb;
+                            padding-right:10px;
+                            margin-right:10px;
+                        }
+                        span{
+                            display:inline;
+                            font-family: 'Fira Sans';
+                            font-size:12px;
+                        }
+                        .apto{
+                            color: #4f89c8;
+                            font-weight:bolder;
+                            font-size:12px;
+                            font-family: 'Fira Sans';
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
