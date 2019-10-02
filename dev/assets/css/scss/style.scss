@@ -1,4 +1,3 @@
-
 @import "variables";
 @import "mixins";
 @import "fonts";
@@ -43,7 +42,7 @@ html{
             
         
     }
-    .scroll{
+    .scrolll{
         background-color: hsla(0,0%,100%,.95);
         box-shadow: 0 6px 7.84px 0.16px rgba(33,33,33,.1);
     }
@@ -295,12 +294,16 @@ html{
         }
     }
     #plantas{
+        width:100%;
         h3{
             font-family: 'Fira Sans';
             font-size:20pt;
             color:#3f6c93;
             padding-top:90px;
             padding-bottom:60px;
+        }
+        .text-center{
+            margin:50px auto;
         }
         .container{
             .row{
@@ -361,7 +364,407 @@ html{
             }
         }
     }
+
+    #localizacao{
+            
+        .row{
+            height:720px;
+            width:100%;
+            background-color:#fafafa;
+            .mapa{
+                background-image: url('../img/CDRN-maps.jpg');
+                height:600px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                width:100%;
+                margin-top:120px;
+            }
+            .local{
+                padding-left: 95px;
+                margin-top:150px;
+                h3{
+                    font-family: 'Fira Sans';
+                    color:#3f6f93;
+                    font-size:20pt;
+                    font-weight: lighter;
+                    padding-bottom: 30px;
+                }
+                .endereco{
+                    padding-bottom: 0;
+                }
+                h2{
+                    font-family: 'Fira Sans';
+                    color:#25355f;
+                    font-size:30pt;
+                    font-weight: lighter;
+                    font-style:italic;
+                    padding-bottom: 30px;
+                }
+                .apresentacao{
+                    font-family: 'Fira Sans';
+                    font-size:12pt;
+                    color: #6f7983;
+                    font-weight:100;
+                    display: block;
+                    padding-bottom: 30px;
+                } 
+                
+                hr{
+                    width:45px;
+                    background-color: #3f6f93;
+                    height:2px;
+                }
+                div{
+                    display:inline;
+                    float:left;
+                    padding-left:15px;
+                    p{
+                        display: inline;
+                        font-family: 'Fira Sans';
+                        font-weight: lighter;
+                        font-size: 14pt;
+                        color:#a5b0b7;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    #tempo{
+        width:100%;
+        background-color:#fafafa;
+        position: relative;
+        .prevtempo{
+            position: absolute;
+            top:45%;
+            left:60px;
+            transform: rotate(180deg);
+        }
+        .proxtempo{
+            position: absolute;
+            top:45%;
+            right:60px;
+        }
+        .container{
+            border-top:1px solid #cfd8dc;
+            padding: 85px 0;
+            .itens{
+                width:100%;
+                .item{
+                    .imagem{
+                        width:40px;
+                        height:40px;
+                        margin:0 auto;
+                    }
+                    .tempo{
+                        color:#4f89c8;
+                        font-family: 'Fira Sans';
+                        font-weight: semi-bold;
+                    }
+                }
+            }
+        }
+    }
+
+
+    #formulario{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        .row{
+            form{
+                width:50%;
+                margin: 0 auto;
+                h3{
+                    color:#6f7983;
+                    font-size:15pt;
+                    font-family:'Fira Sans';
+                    font-weight:100;
+                }
+                .compra{
+                    width:100%;
+                    font-style:italic;
+                    font-family:'Fira Sans';
+                    padding:10px;
+                    border-radius:4px;
+                    color:#bdbdbd;
+                    margin-top:20px;
+                }
+                 
+                  .form-group {
+                    position: relative;
+                    margin-top: 2.25rem;
+                    margin-bottom: 2.25rem;
+                  }
+                  
+                  
+
+                  
+                  .form-group input{
+                    height: 1.9rem;
+                    font-family:'Fira Sans';
+                  }
+
+                  .form-group .control-label {
+                    position: absolute;
+                    top: 0.25rem;
+                    pointer-events: none;
+                    padding-left: 0.125rem;
+                    z-index: 1;
+                    color: #b3b3b3;
+                    font-size: 1rem;
+                    font-weight: normal;
+                    -webkit-transition: all 0.28s ease;
+                    transition: all 0.28s ease;
+                    font-family:'Fira Sans';
+                    font-style:italic;
+                  }
+                  .form-group .bar {
+                    position: relative;
+                    border-bottom: 0.0625rem solid #999;
+                    display: block;
+                  }
+                  .form-group .bar::before {
+                    content: '';
+                    height: 0.125rem;
+                    width: 0;
+                    left: 50%;
+                    bottom: -0.0625rem;
+                    position: absolute;
+                    background: #337ab7;
+                    -webkit-transition: left 0.28s ease, width 0.28s ease;
+                    transition: left 0.28s ease, width 0.28s ease;
+                    z-index: 2;
+                  }
+                  .form-group input,
+                  .form-group textarea {
+                    display: block;
+                    background: none;
+                    padding: 0.125rem 0.125rem 0.0625rem;
+                    font-size: 1rem;
+                    border-width: 0;
+                    border-color: transparent;
+                    line-height: 1.9;
+                    width: 100%;
+                    color: transparent;
+                    -webkit-transition: all 0.28s ease;
+                    transition: all 0.28s ease;
+                    box-shadow: none;
+                  }
+                  .form-group input[type="file"] {
+                    line-height: 1;
+                  }
+                  .form-group input[type="file"] ~ .bar {
+                    display: none;
+                  }
+                  .form-group select,
+                  .form-group input:focus,
+                  .form-group input:valid,
+                  .form-group input.form-file,
+                  .form-group input.has-value,
+                  .form-group textarea:focus,
+                  .form-group textarea:valid,
+                  .form-group textarea.form-file,
+                  .form-group textarea.has-value {
+                    color: #333;
+                  }
+                  .form-group select ~ .control-label,
+                  .form-group input:focus ~ .control-label,
+                  .form-group input:valid ~ .control-label,
+                  .form-group input.form-file ~ .control-label,
+                  .form-group input.has-value ~ .control-label,
+                  .form-group textarea:focus ~ .control-label,
+                  .form-group textarea:valid ~ .control-label,
+                  .form-group textarea.form-file ~ .control-label,
+                  .form-group textarea.has-value ~ .control-label {
+                    font-size: 0.8rem;
+                    color: gray;
+                    top: -1rem;
+                    left: 0;
+                  }
+                  .form-group select:focus,
+                  .form-group input:focus,
+                  .form-group textarea:focus {
+                    outline: none;
+                  }
+                  .form-group select:focus ~ .control-label,
+                  .form-group input:focus ~ .control-label,
+                  .form-group textarea:focus ~ .control-label {
+                    color: #337ab7;
+                  }
+                  .form-group select:focus ~ .bar::before,
+                  .form-group input:focus ~ .bar::before,
+                  .form-group textarea:focus ~ .bar::before {
+                    width: 100%;
+                    left: 0;
+                  }
+                  
+                  .checkbox label,
+                  .form-radio label {
+                    position: relative;
+                    cursor: pointer;
+                    padding-left: 2rem;
+                    text-align: left;
+                    color: #333;
+                    display: block;
+                  }
+                  .checkbox input,
+                  .form-radio input {
+                    width: auto;
+                    opacity: 0.00000001;
+                    position: absolute;
+                    left: 0;
+                  }
+                  
+                  .has-error .legend.legend, .has-error.form-group .control-label.control-label {
+                    color: #d9534f;
+                  }
+                  .has-error.form-group .form-help,
+                  .has-error.form-group .helper, .has-error.checkbox .form-help,
+                  .has-error.checkbox .helper, .has-error.radio .form-help,
+                  .has-error.radio .helper, .has-error.form-radio .form-help,
+                  .has-error.form-radio .helper {
+                    color: #d9534f;
+                  }
+                  .has-error .bar::before {
+                    background: #d9534f;
+                    left: 0;
+                    width: 100%;
+                  }
+                  
+                  .button {
+                    position: relative;
+                    background: currentColor;
+                    border: 1px solid currentColor;
+                    font-size: 1.1rem;
+                    color: #4f93ce;
+                    margin: 3rem 0;
+                    padding: 0.75rem 3rem;
+                    cursor: pointer;
+                    -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+                    transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+                    overflow: hidden;
+                    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+                  }
+                  .button span {
+                    color: #fff;
+                    position: relative;
+                    z-index: 1;
+                  }
+                  .button::before {
+                    content: '';
+                    position: absolute;
+                    background: #071017;
+                    border: 50vh solid #1d4567;
+                    width: 30vh;
+                    height: 30vh;
+                    border-radius: 50%;
+                    display: block;
+                    top: 50%;
+                    left: 50%;
+                    z-index: 0;
+                    opacity: 1;
+                    -webkit-transform: translate(-50%, -50%) scale(0);
+                            transform: translate(-50%, -50%) scale(0);
+                  }
+                  .button:hover {
+                    color: #337ab7;
+                    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+                  }
+                  .button:active::before, .button:focus::before {
+                    -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+                    transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+                    transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+                    transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+                    -webkit-transform: translate(-50%, -50%) scale(1);
+                            transform: translate(-50%, -50%) scale(1);
+                    opacity: 0;
+                  }
+                  .button:focus {
+                    outline: none;
+                  }
+        
+                }
+            }
+                hr{
+                   color:$azlgt;
+                   background-color:$azlgt;
+                   height: 2px;
+                   width:35px;
+                   margin:0 auto;
+                   margin-bottom: 55px;
+                }
+                h1{
+                    color:$azlgt;
+                    font-family: FiraSansLight,sans-serif;
+                    font-size: 15pt;
+                    text-align: center;
+                    padding-bottom: 4px
+                }
+                .cem{
+                    margin-top: 30px;
+                    text-align: center;
+                    input[type='submit']{
+                        width:200px;
+                        text-align: center;
+                        font-family: FiraSansSemiBold,sans-serif;
+                        font-size: 12pt;
+                        color:#c1c1c1;
+                        border-color:#c1c1c1;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                }
+            }
+        }
+
+
+
+        #zeconfacebook{
+            width:100%;
+            height:100vh;
+            background-image: url('../img/PRLLX.jpg');
+            background-repeat: no-repeat;
+            // background-size:cover;
+            background-attachment: fixed;
+            background-position: center;
+            h1{
+                font-family: FiraSansLight;
+                text-align: center;
+                color:$branco;
+                font-size:36pt;
+            }
+            h2{
+                font-family: FiraSansRegular,sans-serif;
+                text-align: center;
+                color:$branco;
+                font-size:15pt;
+            }
+            .box{
+                width:100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height:100%;
+            }
+            .box2{
+                width:100%;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                flex-direction: row;
+                margin-top:20px;
+            }
+
+        }
+    
 }
+
+
+
+// -----------------------------------------------------------------------------------------------------------
+
 
 /* Tablet em retrato a paisagem e desktop */
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -535,6 +938,8 @@ html{
                 }
             }
         }
+
+        
     }
 }
 
@@ -1043,5 +1448,16 @@ html{
         }
     }
 }
+
+
+
+
+
+
+
+  
+
+
+
 
 
