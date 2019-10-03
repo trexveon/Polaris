@@ -19,7 +19,7 @@
         nextArrow: $('.proxtempo'),
 
         responsive: [{
-            breakpoint: 700,
+            breakpoint: 800,
             settings: {
               slidesToShow: 4
             }

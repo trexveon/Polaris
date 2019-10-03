@@ -178,11 +178,17 @@ html{
                             }   
                         }   
                     }
-                   .data{
+                    .data{
                        color:#4b8fcb;
                        font-size: 12pt;
                        font-weight: bold;
+                       margin:0;
+                       padding:0;
                    }
+                   .data2{
+                    margin:0;
+                    padding:0;
+                    }
                 }
             }
         }
@@ -299,24 +305,40 @@ html{
             font-family: 'Fira Sans';
             font-size:20pt;
             color:#3f6c93;
-            padding-top:90px;
-            padding-bottom:60px;
+            padding:90px;
         }
-        .text-center{
-            margin:50px auto;
-        }
+
         .container{
+            .row2{
+                height: 760px;
+                a{
+                    margin:150px auto;
+                    color:#bdbdbd;
+                    font-family: 'Fira Sans';
+                    padding: 10px 40px;
+                }
+            }
             .row{
-                position:relative;
-                height:492px;
-                margin-bottom: 150px;
-                .col-3{
+                padding-bottom:150px;
+                .col1{
+                    height: 490px;
+                    position:relative;
+                    img{
+                        position:absolute;
+                        bottom:0;
+                        right:0;
+                    }
+                }
+                .col2{
                     padding-left: 50px;
                     font-size:14px;
                     color:#757575;
                     font-family: 'Fira Sans';
+                    
+                    
                 }
-                .col-2{
+                .col3{
+                    display:block;
                     margin-top:10px;
                     .vagagaragem{
                         font-size:14px;
@@ -324,20 +346,36 @@ html{
                         font-family: 'Fira Sans';
                     }
                     font-size:14px;
-                        float:left;
-                        font-family: 'Fira Sans';
+                    float:left;
+                    font-family: 'Fira Sans';
                 }
-                div{
-                    .img1{
+                .col4{
+                    height: 490px;
+                    position:relative;
+                    img{
                         position:absolute;
-                        bottom:0;
-                        right:0;
-                    }
-                    .img2{
-                        position:absolute;
-                        bottom:0;
+                        top:0;
                         left:0;
                     }
+                }
+
+                .col5{
+                    display:none;
+                    margin:0;
+                    padding:0;
+                    margin-top:10px;
+                    font-size:14px;
+                    float:left;
+                    font-family: 'Fira Sans';
+                    .vagagaragem{
+                        font-size:14px;
+                        float:left;
+                        font-family: 'Fira Sans';
+                    }
+                }
+                
+
+                div{
                     div{
                         float:left;  
                     }
@@ -368,7 +406,7 @@ html{
     #localizacao{
             
         .row{
-            height:720px;
+            height:auto;
             width:100%;
             background-color:#fafafa;
             .mapa{
@@ -470,7 +508,7 @@ html{
 
 
     #formulario{
-        padding-top: 80px;
+        padding-top: 150px;
         padding-bottom: 80px;
         .row{
             form{
@@ -725,12 +763,11 @@ html{
             height:100vh;
             background-image: url('../img/PRLLX.jpg');
             background-repeat: no-repeat;
-            // background-size:cover;
             background-attachment: fixed;
             background-position: center;
             h1{
                 font-family: FiraSansLight;
-                text-align: center;
+                text-align: left;
                 color:$branco;
                 font-size:36pt;
             }
@@ -743,7 +780,7 @@ html{
             .box{
                 width:100%;
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 justify-content: center;
                 flex-direction: column;
                 height:100%;
@@ -755,19 +792,240 @@ html{
                 justify-content: left;
                 flex-direction: row;
                 margin-top:20px;
+                img{
+                    margin-right:60px;
+                }
             }
 
+        }
+
+
+
+
+        .links{
+            width:100%;
+            // display:flex;
+            // flex-direction: row;
+            // align-items: flex-start;
+            // justify-content: center;
+            padding-top:100px;
+            padding-bottom:100px;
+            position: relative;
+            background-color: $brancofundo;
+            .idatopo{
+                position: absolute;
+                bottom: 55px;
+                right:25px; 
+            }
+            .container{
+                .row{
+                    .row1{
+                        text-align: center;
+                        margin-top:12px;
+                    }
+                    .row2{
+                        text-align: left;
+                        hr{
+                            color:$laranja;
+                            background-color:$laranja;
+                            width:15%;
+                            height:1px;
+                            // margin-left:30px;
+                        }
+                        ul{
+                            list-style:none;
+                            color:$cinzafonte3;
+                            font-family:FiraSansLight;
+                            font-size:10pt;
+                            text-align: left;
+                            li{
+                                margin-top:7px;
+                                a{
+                                    color:$cinzafonte3;
+                                    :hover{
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .row3{
+                        display:block;
+                        text-align: center;
+                        margin-top:12px;
+                    }
+                    .row4{
+                        text-align: left;
+                        hr{
+                            color:$azulEscuro;
+                            background-color:$azulEscuro;
+                            width:15%;
+                            height:1px;
+                            // margin-left:30px;
+                        }
+                        ul{
+                            list-style:none;
+                            color:$cinzafonte3;
+                            font-family:FiraSansLight;
+                            font-size:10pt;
+                            text-align: left;
+                            li{
+                                margin-top:7px;
+                                a{
+                                    color:$cinzafonte3;
+                                    :hover{
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .col5{
+                        display:none;
+                        margin:0;
+                        padding:0;
+                        margin-top:10px;
+                        font-size:14px;
+                        float:left;
+                        font-family: 'Fira Sans';
+                        .vagagaragem{
+                            font-size:14px;
+                            float:left;
+                            font-family: 'Fira Sans';
+                        }
+                    }
+                }
+            }
+        }//links
+    
+        footer{
+            width:100%;
+            background:$azulEscuro2;
+            color:white;
+            .container{
+                padding-top:70px;
+                .end{
+                    width:100%;
+                    .icone{
+                        display:flex;
+                        align-items: center;
+                        flex-direction: row;
+                        justify-content: center;
+                        padding-bottom:80px;
+                    }
+                    .endereco{
+                        padding-bottom:100px;
+                        padding-top:40px;
+                        ul{
+                            list-style:none;
+                            text-align:left;
+                            padding-top: 0;
+                            margin-top: 0;
+                            :nth-child(1){
+                                list-style-image: url('../img/local.png');
+                            }
+                            :nth-child(2){
+                                list-style-image: url('../img/tel.png');
+                            }
+                            :nth-child(3){
+                                list-style-image: url('../img/carta.png');
+                            }
+                             li{
+                                 font-family:FiraSansLight;
+                                 font-size:20px;
+                                 margin-bottom:14px;
+                             }
+                        }
+                    }
+                }
+                .redes{
+                    text-align: right;
+                    padding-top: 40px;
+                    ul{
+                        list-style: none;
+                        img{
+                            width:20px;
+                            margin-bottom: 20px;
+                            margin-top:5px;
+                            text-align: right;
+                        }
+                    }
+                }
+                .copyright{
+                    border-top: 1px solid $azul;
+                    width:100%;
+                    padding-top:35px;
+                    padding-bottom:35px;
+                    font-family:FiraSansRegular;
+                    color:$za;
+                    span{
+                        font-family:FiraSansSemiBold;
+                    }
+                    #human2be {
+                        fill: white;
+                        max-width: 30px;
+                        float:right;
+                    }
+                    #human2be .h2be_h {
+                      -webkit-transition: all ease 0.5s;
+                      -moz-transition: all ease 0.5s;
+                      -ms-transition: all ease 0.5s;
+                      -o-transition: all ease 0.5s;
+                      transition: all ease 0.5s;
+                    }
+                    #human2be .h2be_dot {
+                      -webkit-transition: all ease 0.5s;
+                      -moz-transition: all ease 0.5s;
+                      -ms-transition: all ease 0.5s;
+                      -o-transition: all ease 0.5s;
+                      transition: all ease 0.5s;
+                    }
+                    #human2be .h2be_2 {
+                      -webkit-transition: all ease 0.3s;
+                      -moz-transition: all ease 0.3s;
+                      -ms-transition: all ease 0.3s;
+                      -o-transition: all ease 0.3s;
+                      transition: all ease 0.3s;
+                    }
+                    #human2be .h2be_b {
+                      -webkit-transition: all ease 0.5s;
+                      -moz-transition: all ease 0.5s;
+                      -ms-transition: all ease 0.5s;
+                      -o-transition: all ease 0.5s;
+                      transition: all ease 0.5s;
+                    }
+                    #human2be .h2be_circle {
+                      -webkit-transition: all ease 0.7s;
+                      -moz-transition: all ease 0.7s;
+                      -ms-transition: all ease 0.7s;
+                      -o-transition: all ease 0.7s;
+                      transition: all ease 0.7s;
+                    }
+                    #human2be:hover .h2be_2,
+                    #human2be:hover .h2be_b,
+                    #human2be:hover .h2be_circle {
+                      fill: #0ab49b;
+                    }
+                    #human2be:hover .h2be_h {
+                      fill: #fff;
+                    }
+                    #human2be:hover .h2be_dot {
+                      fill: #fff;
+                    }
+                }
+    
+            }
         }
     
 }
 
-
+// ---------------------------------------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------------------------------------
 
 
 /* Tablet em retrato a paisagem e desktop */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 767px) and (max-width: 1199px) {
     body{
         .topHeader{
             width:100%;
@@ -837,12 +1095,12 @@ html{
             }
             
             .prev{;
-                top:55%;
-                left:50px;
+                top:48%;
+                left:10px;
             }
             .prox{
-                top:55%;
-                right:50px;
+                top:48%;
+                right:10px;
             }    
         }  
 
@@ -871,47 +1129,86 @@ html{
         }
 
         #plantas{
+            width:100%;
             h3{
                 font-family: 'Fira Sans';
                 font-size:20pt;
                 color:#3f6c93;
-                padding-top:90px;
-                padding-bottom:60px;
+                padding:50px;
             }
+    
             .container{
+                .row2{
+                    height: 650px;
+                    a{
+                        margin:0 auto;
+                        color:#bdbdbd;
+                        font-family: 'Fira Sans';
+                        padding: 10px 40px;
+                    }
+                }
                 .row{
-                    position:relative;
-                    height:492px;
-                    margin-bottom: 150px;
-                    .col-3{
-                        padding-left: 50px;
+                    padding-bottom:90px;
+                    .col1{
+                        height: 330px;
+                        position:relative;
+                        img{
+                            position:absolute;
+                            bottom:0;
+                            right:20px;
+                            width:700px;
+                        }
+                    }
+                    .col2{
+                        padding-left: 0;
                         font-size:14px;
                         color:#757575;
                         font-family: 'Fira Sans';
+                        
+                        
                     }
-                    .col-2{
+                    .col3{
+                        display: none;
+                        margin:0;
+                        padding:0;
                         margin-top:10px;
+                        font-size:14px;
+                        float:left;
+                        font-family: 'Fira Sans';
                         .vagagaragem{
                             font-size:14px;
                             float:left;
                             font-family: 'Fira Sans';
                         }
+                    }
+                    .col4{
+                        height: 270px;
+                        position:relative;
+                        img{
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            width:100%;
+                        }
+                    }
+                    .col5{
+                        display:block;
+                        margin:0;
+                        padding:0;
+                        padding-top:50px;
+                        margin-top:10px;
                         font-size:14px;
+                        float:left;
+                        font-family: 'Fira Sans';
+                        .vagagaragem{
+                            font-size:14px;
                             float:left;
                             font-family: 'Fira Sans';
+                        }
                     }
+                    
+    
                     div{
-                        .img1{
-                            position:absolute;
-                            bottom:0;
-                            right:0;
-                            width:200px;
-                        }
-                        .img2{
-                            position:absolute;
-                            bottom:0;
-                            left:0;
-                        }
                         div{
                             float:left;  
                         }
@@ -937,14 +1234,118 @@ html{
                     }
                 }
             }
+        }   
+
+
+
+        #localizacao{
+            
+            .row{
+                height:auto;
+                width:100%;
+                background-color:#fafafa;
+                .mapa{
+                    height:380px;
+                    margin-top:100px;
+                }
+                .local{
+                    padding-left: 45px;
+                    margin-top:100px;
+                    height:auto;
+                    h3{
+                        color:#3f6f93;
+                        font-size:13pt;
+                        padding-bottom: 10px;
+                    }
+                    h2{
+                        font-family: 'Fira Sans';
+                        color:#25355f;
+                        font-size:15pt;
+                        font-weight: lighter;
+                        font-style:italic;
+                        padding-bottom: 10px;
+                    }
+                    .apresentacao{
+                        font-family: 'Fira Sans';
+                        font-size:12pt;
+                        color: #6f7983;
+                        font-weight:100;
+                        display: block;
+                        
+                    } 
+                    
+                    hr{
+                        width:45px;
+                        background-color: #3f6f93;
+                        height:2px;
+                    }
+                    div{
+                        display:inline;
+                        float:left;
+                        padding-left:15px;
+                        padding-bottom: 50px;
+                        p{
+                            display: inline;
+                            font-family: 'Fira Sans';
+                            font-weight: lighter;
+                            font-size: 12pt;
+                            color:#a5b0b7;
+                        }
+                        
+                    }
+                }
+            }
         }
 
-        
+
+        #tempo{
+            width:100%;
+            background-color:#fafafa;
+            position: relative;
+            .prevtempo{
+                position: absolute;
+                top:45%;
+                left:60px;
+                transform: rotate(180deg);
+            }
+            .proxtempo{
+                position: absolute;
+                top:45%;
+                right:60px;
+            }
+            .container{
+                border-top:1px solid #cfd8dc;
+                padding: 45px 0;
+                .itens{
+                    width:80%;
+                    margin:0 auto;
+                    .item{
+                        .imagem{
+                            width:40px;
+                            height:40px;
+                            margin:0 auto;
+                        }
+                        .tempo{
+                            color:#4f89c8;
+                            font-family: 'Fira Sans';
+                            font-weight: semi-bold;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
+
+
+
+
+// --------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------------
+
 /* Telefones em paisagem a tablet em retrato */
-@media (min-width: 481px) and(max-width: 767px) {
+@media (min-width: 481px) and(max-width: 766px) {
     body{
         .topHeader{
             width:100%;
@@ -1019,10 +1420,10 @@ html{
                         p{
                             font-size:12pt;
                         }
-                        ul{;
+                        ul{
                             color:#757575;
                             font-size:12pt;
-                            text-align: left;; 
+                            text-align: left; 
                             li{
                                 .number{
                                     float:left;
@@ -1053,10 +1454,14 @@ html{
                            text-align: center;
                            margin:0;
                            padding:0;
+                           display:inline;
                        }
                        .data2{
                         text-align: center;
+                        margin:0;
+                        padding:0;
                         padding-bottom: 20px;
+                        display:inline;
                        }
                     }
                 }
@@ -1087,13 +1492,13 @@ html{
             .prev{
                 transform: rotate(180deg);
                 position: absolute;
-                top:55%;
-                left:50px;
+                top:45%;
+                left:30px;
             }
             .prox{
                 position: absolute;
-                top:55%;
-                right:50px;
+                top:45%;
+                right:30px;
             }    
         }  
 
@@ -1119,46 +1524,83 @@ html{
         }
 
         #plantas{
+            width:100%;
             h3{
                 font-family: 'Fira Sans';
                 font-size:20pt;
                 color:#3f6c93;
-                padding-top:90px;
-                padding-bottom:60px;
+                padding:90px;
             }
+    
             .container{
+                .row2{
+                    height: 580px;
+                    a{
+                        margin:50px auto;
+                        color:#bdbdbd;
+                        font-family: 'Fira Sans';
+                        padding: 10px 40px;
+                    }
+                }
                 .row{
-                    position:relative;
-                    height:492px;
-                    margin-bottom: 150px;
-                    .col-3{
-                        padding-left: 50px;
+                    // padding-bottom:50px;
+                    .col1{
+                        height: 200px;
+                        position:relative;
+                        img{
+                            position:absolute;
+                            bottom:0;
+                            right:0;
+                            width:100%;
+                        }
+                    }
+                    .col2{
+                        padding-left: 0;
                         font-size:14px;
                         color:#757575;
-                        font-family: 'Fira Sans';
+                        font-family: 'Fira Sans';   
                     }
-                    .col-2{
-                        margin-top:10px;
+                    .col3{
+                        display:none;
+                        margin-top:0;
                         .vagagaragem{
                             font-size:14px;
                             float:left;
                             font-family: 'Fira Sans';
                         }
                         font-size:14px;
+                        float:left;
+                        font-family: 'Fira Sans';
+                    }
+                    .col4{
+                        height: 200px;
+                        position:relative;
+                        img{
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            width:100%;
+                        }
+                    }
+    
+                    .col5{
+                        display:block;
+                        margin:0;
+                        
+                        padding:0;
+                        padding-top:100px;
+                        font-size:14px;
+                        float:left;
+                        font-family: 'Fira Sans';
+                        .vagagaragem{
+                            font-size:14px;
                             float:left;
                             font-family: 'Fira Sans';
+                        }
                     }
+                    
+    
                     div{
-                        .img1{
-                            position:absolute;
-                            bottom:0;
-                            right:0;
-                        }
-                        .img2{
-                            position:absolute;
-                            bottom:0;
-                            left:0;
-                        }
                         div{
                             float:left;  
                         }
@@ -1185,10 +1627,78 @@ html{
                 }
             }
         }
+    
+        #localizacao{
+                
+            .row{
+                height:720px;
+                width:100%;
+                background-color:#fafafa;
+                .mapa{
+                    background-image: url('../img/CDRN-maps.jpg');
+                    height:600px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width:100%;
+                    margin-top:120px;
+                }
+                .local{
+                    padding-left: 95px;
+                    margin-top:150px;
+                    h3{
+                        font-family: 'Fira Sans';
+                        color:#3f6f93;
+                        font-size:20pt;
+                        font-weight: lighter;
+                        padding-bottom: 30px;
+                    }
+                    .endereco{
+                        padding-bottom: 0;
+                    }
+                    h2{
+                        font-family: 'Fira Sans';
+                        color:#25355f;
+                        font-size:30pt;
+                        font-weight: lighter;
+                        font-style:italic;
+                        padding-bottom: 30px;
+                    }
+                    .apresentacao{
+                        font-family: 'Fira Sans';
+                        font-size:12pt;
+                        color: #6f7983;
+                        font-weight:100;
+                        display: block;
+                        padding-bottom: 30px;
+                    } 
+                    
+                    hr{
+                        width:45px;
+                        background-color: #3f6f93;
+                        height:2px;
+                    }
+                    div{
+                        display:inline;
+                        float:left;
+                        padding-left:15px;
+                        p{
+                            display: inline;
+                            font-family: 'Fira Sans';
+                            font-weight: lighter;
+                            font-size: 14pt;
+                            color:#a5b0b7;
+                        }
+                        
+                    }
+                }   
+            }
+        } 
     }
 }
 
-
+// ------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------
 /* Telefones em paisagem e abaixo */
 @media (max-width: 480px) {
     .topHeader{
@@ -1346,12 +1856,12 @@ html{
             .prev{
                 transform: rotate(180deg);
                 position: absolute;
-                top:60%;
+                top:84%;
                 left:50px;
             }
             .prox{
                 position: absolute;
-                top:60%;
+                top:50%;
                 right:50px;
             }    
         }  
@@ -1380,46 +1890,82 @@ html{
         }
         
         #plantas{
+            width:100%;
             h3{
-                font-family: 'Fira Sans';
-                font-size:20pt;
-                color:#3f6c93;
-                padding-top:90px;
-                padding-bottom:60px;
+                padding:20px;
             }
+    
             .container{
+                .row2{
+                    height: 500px;
+                    a{
+                        margin:0 auto;
+                        color:#bdbdbd;
+                        font-family: 'Fira Sans';
+                        padding: 10px 40px;
+                    }
+                }
                 .row{
-                    position:relative;
-                    height:492px;
-                    margin-bottom: 150px;
-                    .col-3{
-                        padding-left: 50px;
+                    padding-bottom:50px;
+                    .col1{
+                        height: 200px;
+                        position:relative;
+                        img{
+                            position:absolute;
+                            bottom:0;
+                            right:20px;
+                            width:90%;
+                            margin:0 auto;
+                        }
+                    }
+                    .col2{
+                        padding-left: 25px;
                         font-size:14px;
                         color:#757575;
-                        font-family: 'Fira Sans';
+                        font-family: 'Fira Sans';   
                     }
-                    .col-2{
-                        margin-top:10px;
+                    .col3{
+                        display:none;
+                        margin-top:0;
                         .vagagaragem{
                             font-size:14px;
                             float:left;
                             font-family: 'Fira Sans';
                         }
                         font-size:14px;
+                        float:left;
+                        font-family: 'Fira Sans';
+                    }
+                    .col4{
+                        height: 200px;
+                        position:relative;
+                        img{
+                            position:absolute;
+                            top:0;
+                            left:25px;
+                            width:90%;
+                        }
+                    }
+    
+                    .col5{
+                        display:block;
+                        margin:0;
+                        
+                        padding:0;
+                        padding-top:20px;
+                        padding-left:25px;
+                        font-size:14px;
+                        float:left;
+                        font-family: 'Fira Sans';
+                        .vagagaragem{
+                            font-size:14px;
                             float:left;
                             font-family: 'Fira Sans';
+                        }
                     }
+                    
+    
                     div{
-                        .img1{
-                            position:absolute;
-                            bottom:0;
-                            right:0;
-                        }
-                        .img2{
-                            position:absolute;
-                            bottom:0;
-                            left:0;
-                        }
                         div{
                             float:left;  
                         }
@@ -1446,8 +1992,109 @@ html{
                 }
             }
         }
+
+
+        #localizacao{
+            
+            .row{
+                height:auto;
+                width:100%;
+                background-color:#fafafa;
+                .mapa{
+                    height:380px;
+                    margin-top:100px;
+                }
+                .local{
+                    padding-left: 45px;
+                    margin-top:100px;
+                    height:auto;
+                    h3{
+                        color:#3f6f93;
+                        font-size:13pt;
+                        padding-bottom: 10px;
+                    }
+                    h2{
+                        font-family: 'Fira Sans';
+                        color:#25355f;
+                        font-size:15pt;
+                        font-weight: lighter;
+                        font-style:italic;
+                        padding-bottom: 10px;
+                    }
+                    .apresentacao{
+                        font-family: 'Fira Sans';
+                        font-size:12pt;
+                        color: #6f7983;
+                        font-weight:100;
+                        display: block;
+                        
+                    } 
+                    
+                    hr{
+                        width:45px;
+                        background-color: #3f6f93;
+                        height:2px;
+                    }
+                    div{
+                        display:inline;
+                        float:left;
+                        padding-left:15px;
+                        padding-bottom: 50px;
+                        p{
+                            display: inline;
+                            font-family: 'Fira Sans';
+                            font-weight: lighter;
+                            font-size: 12pt;
+                            color:#a5b0b7;
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+
+        #tempo{
+            width:100%;
+            background-color:#fafafa;
+            position: relative;
+            .prevtempo{
+                position: absolute;
+                top:45%;
+                left:60px;
+                transform: rotate(180deg);
+            }
+            .proxtempo{
+                position: absolute;
+                top:45%;
+                right:60px;
+            }
+            .container{
+                border-top:1px solid #cfd8dc;
+                padding: 45px 0;
+                .itens{
+                    width:80%;
+                    margin:0 auto;
+                    .item{
+                        .imagem{
+                            width:40px;
+                            height:40px;
+                            margin:0 auto;
+                        }
+                        .tempo{
+                            color:#4f89c8;
+                            font-family: 'Fira Sans';
+                            font-weight: semi-bold;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+
+
+
 
 
 
