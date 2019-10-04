@@ -195,6 +195,7 @@ html{
     }
 
     #galeria{
+        z-index:1;
         background-color:#fafafa;
         width:100%;
         position: relative;
@@ -310,12 +311,14 @@ html{
 
         .container{
             .row2{
-                height: 760px;
+                height: auto;
                 a{
-                    margin:150px auto;
+                    margin:0 auto;
+                    margin-top:150px;
                     color:#bdbdbd;
                     font-family: 'Fira Sans';
                     padding: 10px 40px;
+                    border-color:#bdbdbd;;
                 }
             }
             .row{
@@ -1025,7 +1028,7 @@ html{
 
 
 /* Tablet em retrato a paisagem e desktop */
-@media (min-width: 767px) and (max-width: 1199px) {
+@media (min-width: 769px) and (max-width: 1199px) {
     body{
         .topHeader{
             width:100%;
@@ -1139,16 +1142,19 @@ html{
     
             .container{
                 .row2{
-                    height: 650px;
+                    height: auto;
                     a{
+                        margin:none;
                         margin:0 auto;
+                        // margin-top:160px;
+                        margin-bottom: 0;
                         color:#bdbdbd;
                         font-family: 'Fira Sans';
                         padding: 10px 40px;
                     }
                 }
                 .row{
-                    padding-bottom:90px;
+                    padding-bottom:25px;
                     .col1{
                         height: 330px;
                         position:relative;
@@ -1168,7 +1174,7 @@ html{
                         
                     }
                     .col3{
-                        display: none;
+                        display: block;
                         margin:0;
                         padding:0;
                         margin-top:10px;
@@ -1192,7 +1198,7 @@ html{
                         }
                     }
                     .col5{
-                        display:block;
+                        display:none;
                         margin:0;
                         padding:0;
                         padding-top:50px;
@@ -1244,6 +1250,7 @@ html{
                 height:auto;
                 width:100%;
                 background-color:#fafafa;
+                margin:0;
                 .mapa{
                     height:380px;
                     margin-top:100px;
@@ -1345,7 +1352,7 @@ html{
 // -----------------------------------------------------------------------------------------------------------------
 
 /* Telefones em paisagem a tablet em retrato */
-@media (min-width: 481px) and(max-width: 766px) {
+@media (min-width: 481px) and(max-width: 768px) {
     body{
         .topHeader{
             width:100%;
@@ -1408,6 +1415,7 @@ html{
             }
             .container{
                 padding-bottom:50px;
+                padding-left: 0;
                 .row{
                     div{
                         padding-right:0;
@@ -1419,6 +1427,8 @@ html{
                         }
                         p{
                             font-size:12pt;
+                            display:block;
+
                         }
                         ul{
                             color:#757575;
@@ -1454,14 +1464,19 @@ html{
                            text-align: center;
                            margin:0;
                            padding:0;
-                           display:inline;
+                           display:block;
+                           float:left;
+                           margin-left:40px;
                        }
                        .data2{
-                        text-align: center;
-                        margin:0;
-                        padding:0;
-                        padding-bottom: 20px;
-                        display:inline;
+                            text-align: center;
+                            margin:0;
+                            padding:0;
+                            padding-bottom: 20px;
+                            display:block;
+                            float:left;
+                            clear:left;
+                            margin-left:40px;
                        }
                     }
                 }
@@ -1470,7 +1485,7 @@ html{
         
         
         #galeria{
-
+            
             h3{
                 padding:30px;
             }
@@ -1534,16 +1549,18 @@ html{
     
             .container{
                 .row2{
-                    height: 580px;
+                    height: 200px;
                     a{
-                        margin:50px auto;
+                        margin:0 auto;
+                        margin-top: 20px;
+                        margin-bottom:0;
                         color:#bdbdbd;
                         font-family: 'Fira Sans';
                         padding: 10px 40px;
                     }
                 }
                 .row{
-                    // padding-bottom:50px;
+                    height:auto;
                     .col1{
                         height: 200px;
                         position:relative;
@@ -1589,6 +1606,7 @@ html{
                         
                         padding:0;
                         padding-top:100px;
+                        
                         font-size:14px;
                         float:left;
                         font-family: 'Fira Sans';
@@ -1631,12 +1649,13 @@ html{
         #localizacao{
                 
             .row{
-                height:720px;
+                height:auto;
                 width:100%;
                 background-color:#fafafa;
+                margin:0;
                 .mapa{
                     background-image: url('../img/CDRN-maps.jpg');
-                    height:600px;
+                    height:500px;
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -1645,7 +1664,7 @@ html{
                 }
                 .local{
                     padding-left: 95px;
-                    margin-top:150px;
+                    margin-top:30px;
                     h3{
                         font-family: 'Fira Sans';
                         color:#3f6f93;
@@ -1682,6 +1701,7 @@ html{
                         display:inline;
                         float:left;
                         padding-left:15px;
+                        padding-bottom: 20px;
                         p{
                             display: inline;
                             font-family: 'Fira Sans';
@@ -1861,7 +1881,7 @@ html{
             }
             .prox{
                 position: absolute;
-                top:50%;
+                top:84%;
                 right:50px;
             }    
         }  
@@ -1897,9 +1917,10 @@ html{
     
             .container{
                 .row2{
-                    height: 500px;
+                    height: auto;
                     a{
                         margin:0 auto;
+                        margin-top:30px;
                         color:#bdbdbd;
                         font-family: 'Fira Sans';
                         padding: 10px 40px;
@@ -2000,12 +2021,16 @@ html{
                 height:auto;
                 width:100%;
                 background-color:#fafafa;
+                margin:0;
                 .mapa{
                     height:380px;
+                    margin:0;
+                    padding:0;
                     margin-top:100px;
+                    background-size: cover;
                 }
                 .local{
-                    padding-left: 45px;
+                    padding-left: 25px;
                     margin-top:100px;
                     height:auto;
                     h3{
@@ -2044,7 +2069,7 @@ html{
                             display: inline;
                             font-family: 'Fira Sans';
                             font-weight: lighter;
-                            font-size: 12pt;
+                            font-size: 10pt;
                             color:#a5b0b7;
                         }
                         
@@ -2061,17 +2086,17 @@ html{
             .prevtempo{
                 position: absolute;
                 top:45%;
-                left:60px;
+                left:10px;
                 transform: rotate(180deg);
             }
             .proxtempo{
                 position: absolute;
                 top:45%;
-                right:60px;
+                right:10px;
             }
             .container{
                 border-top:1px solid #cfd8dc;
-                padding: 45px 0;
+                padding: 20px 0;
                 .itens{
                     width:80%;
                     margin:0 auto;
@@ -2088,6 +2113,270 @@ html{
                         }
                     }
                 }
+            }
+        }
+
+        #formulario{
+            padding-top: 20px;
+            padding-bottom: 40px;
+            width:100%;
+            .row{
+                form{
+                    width:70%;
+                    margin: 0 auto;
+                    h3{
+                        color:#6f7983;
+                        font-size:15pt;
+                        font-family:'Fira Sans';
+                        font-weight:100;
+                    }
+                    .compra{
+                        width:100%;
+                        font-style:italic;
+                        font-family:'Fira Sans';
+                        padding:10px;
+                        border-radius:4px;
+                        color:#bdbdbd;
+                        margin-top:20px;
+                    }
+                }}
+        }
+
+
+
+
+
+
+        #zeconfacebook{
+            width:100%;
+            height:100vh;
+            background-image: url('../img/PRLLX.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size:300% 80%;
+            h1{
+                font-family: FiraSansLight;
+                text-align: left;
+                color:$branco;
+                font-size:26pt;
+            }
+            h2{
+                font-family: FiraSansRegular,sans-serif;
+                text-align: left;
+                color:$branco;
+                font-size:13pt;
+            }
+            .box{
+                width:100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                height:100%;
+            }
+            .box2{
+                width:100%;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                flex-direction: row;
+                margin-top:20px;
+                img{
+                    margin-right:60px;
+                }
+            }
+
+        }
+
+
+
+
+        .links{
+            width:100%;
+            // display:flex;
+            // flex-direction: row;
+            // align-items: flex-start;
+            // justify-content: center;
+            padding-top:20px;
+            padding-bottom:100px;
+            position: relative;
+            background-color: $brancofundo;
+            .idatopo{
+                position: absolute;
+                bottom: 25px;
+                right:25px; 
+                img{
+                    width:50px;
+                }
+            }
+            .container{
+                .row{
+                    .row1{
+                        text-align: center;
+                        margin-top:12px;
+                    }
+                    .row2{
+                        text-align: left;
+                        hr{
+                            color:$laranja;
+                            background-color:$laranja;
+                            width:15%;
+                            height:1px;
+                            // margin-left:30px;
+                        }
+                        ul{
+                            list-style:none;
+                            color:$cinzafonte3;
+                            font-family:FiraSansLight;
+                            font-size:10pt;
+                            text-align: left;
+                            li{
+                                margin-top:7px;
+                                a{
+                                    color:$cinzafonte3;
+                                    :hover{
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .row3{
+                        display:block;
+                        text-align: center;
+                        margin-top:12px;
+                    }
+                    .row4{
+                        text-align: left;
+                        hr{
+                            color:$azulEscuro;
+                            background-color:$azulEscuro;
+                            width:15%;
+                            height:1px;
+                            // margin-left:30px;
+                        }
+                        ul{
+                            list-style:none;
+                            color:$cinzafonte3;
+                            font-family:FiraSansLight;
+                            font-size:10pt;
+                            text-align: left;
+                            li{
+                                margin-top:7px;
+                                a{
+                                    color:$cinzafonte3;
+                                    :hover{
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .col5{
+                        display:none;
+                        margin:0;
+                        padding:0;
+                        margin-top:10px;
+                        font-size:14px;
+                        float:left;
+                        font-family: 'Fira Sans';
+                        .vagagaragem{
+                            font-size:14px;
+                            float:left;
+                            font-family: 'Fira Sans';
+                        }
+                    }
+                }
+            }
+        }//links
+    
+        footer{
+            width:100%;
+            background:$azulEscuro2;
+            color:white;
+            .container{
+                padding-top:20px;
+                padding-bottom: 0;
+                margin:0;
+                .end{
+                    width:100%;
+                    .icone{
+                        display:flex;
+                        align-items: center;
+                        flex-direction: row;
+                        justify-content: center;
+                        padding-bottom:20px;
+                    }
+                    .endereco{
+                        padding-bottom:20px;
+                        padding-top:20px;
+                        ul{
+                            list-style:none;
+                            text-align:left;
+                            padding-top: 0;
+                            margin-top: 0;
+                            padding-left:30px;
+                            font-size:8px;
+                            :nth-child(1){
+                                list-style-image: url('../img/local.png');
+                            }
+                            :nth-child(2){
+                                list-style-image: url('../img/tel.png');
+                            }
+                            :nth-child(3){
+                                list-style-image: url('../img/carta.png');
+                            }
+                             li{
+                                 font-family:FiraSansLight;
+                                 font-size:15px;
+                                 margin-bottom:14px;
+                             }
+                        }
+                    }
+                }
+                .redes{
+                    text-align: center;
+                    display:flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: 0;
+                    
+                    ul{
+                        list-style: none;
+                        display:inline;
+                        li{
+                            display:inline;
+                            margin-right:50px;
+                            margin-left:50px;
+                            img{
+                                width:20px;
+                                margin-bottom: 20px;
+                                margin-top:5px;
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                .copyright{
+                    border-top: 1px solid $azul;
+                    width:100%;
+                    padding-top:15px;
+                    padding-bottom:15px;
+                    font-family:FiraSansRegular;
+                    color:$za;
+                    span{
+                        font-family:FiraSansSemiBold;
+                    }
+                    #human2be {
+                        fill: white;
+                        max-width: 30px;
+                        float:right;
+                    }
+                   
+                }
+    
             }
         }
     }
