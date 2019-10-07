@@ -54,6 +54,83 @@
 
        window.onscroll = scroll;
 
-    
+      //  let nome = document.querySelector('.nome');
+      
+      //  let email = document.querySelector('.email');
+ 
+      //  let whatsapp = document.querySelector('.whatsapp');
+ 
+      //  let compra = document.querySelector('.compra');
+ 
+      //  let enviar = document.querySelector('.enviar');
+ 
+      // enviar.addEventListener('click',(e)=>{
+      //   e.preventDefault();   
+      //       axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'       
+          //   axios({
+          //    method: 'POST', 
+          //    url: 'email.php',
+          //    data: {
+          //      nome: nome.value, 
+          //      email: email.value, 
+          //      whatsapp: whatsapp.value,
+          //      compra: compra.value
+          //    }
+          //  })
+          //  .then(response => {
+          //      console.log(response);
+          //      console.log(nome.value,email.value,whatsapp.value,compra.value);
+          //  })
+          //  .catch(error => {
+          //      console.log(error)
+          //  })
+        //   axios.post('email.php', { email: email.value, nome: nome.value, whatsapp:whatsapp.value, compra:compra.value })
+        //         .then(function(response) {
+        //             axios.defaults.headers.common['Authorization'] = response.data.token;    
+        //             console.log(response.data);
+        //             email.value = '';
+        //             nome.value = '';
+        //             whatsapp.value = '';
+        //             compra.value = '';
+        //         })
+        //         .catch(function(error) {
+        //             console.log(error.data);
+        //         })
+
+        // });
+
+
+        $('.enviar').click( function(e){ 
+          e.preventDefault();
+
+          var nome  = $('.nome').val();
+          var email = $('.email').val();
+          var whatsapp   = $('.whatsapp').val();
+          var compra = $('.compra').val();
+        
+          var urlData = "&nome=" + nome +
+          "&email=" + email +
+          "&whatsapp=" + whatsapp + 
+          "&compra=" + compra ;
+   
+          $.ajax({
+               type: "POST",
+               url: "email.php", 
+               async: true,
+               data: urlData, 
+               success: function(data) { 
+                   console.log(data);
+                   $('.alert-success').fadeIn();
+                    setTimeout(()=>{
+                      $('.alert-success').fadeOut();
+                    },6000);
+               }
+               
+           });
+          
+      });
   });
+
+
+      
 

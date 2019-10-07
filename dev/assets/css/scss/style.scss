@@ -12,8 +12,15 @@ html{
 }
  body{
     background-color:white;
-        
-        .topHeader{
+    .alert-success{
+        position:fixed;
+        width:300xp;
+        bottom:20px;
+        right:20px;
+        z-index:10;
+        display:none;
+    }   
+    .topHeader{
             width:100%;
             
             position:fixed;
@@ -104,6 +111,7 @@ html{
                     color:white;
                     a{
                         padding-top: 20px;
+                        padding-bottom: 20px;
                     }
                 }
                 
@@ -154,7 +162,7 @@ html{
                             .number{
                                 float:left;
                                 margin: 0;
-                                padding-right: 25px;
+                                padding-right: 10px;
                                 font-size: 15pt;
                                 clear:right;
                                 width: 10%;
@@ -170,7 +178,7 @@ html{
                                 border-left:2px solid #4b8bc9;
                                 float:left;
                                 padding:0;
-                                padding-left: 25px;
+                                padding-left: 10px;
                                 display:block;
                                 width: 90%;
                                 margin-bottom: 25px;
@@ -244,9 +252,9 @@ html{
 
 
     #parallax{
-        background-image: url('../img/PRLLX\ CTA.png');;
+        background-image: url('../img/PRLLX-02.png');;
         width:100%;
-        height:500px;
+        height:600px;
         background-attachment: fixed;
         background-size: 100%;
         background-position: center;
@@ -260,26 +268,26 @@ html{
         .filtro1{
             position:absolute;
             width: 100%;
-            height: 800px;
+            height: 600px;
             top:0;
             left:0;
-            background-color:rgba(92,96,108,0.3);
+            background-color:rgba(37,53,95,0.3);
         }
         .filtro2{
             position:absolute;
             width: 100%;
-            height: 800px;
+            height: 600px;
             top:0;
             left:0;
-            background-color:rgba(87,89,95,0.3);
+            background-color:rgba(37,53,95,0.3);
         }
         .filtro3{
             position:absolute;
             width: 100%;
-            height: 800px;
+            height: 600px;
             top:0;
             left:0;
-            background-color:rgba(109,109,110,0.15);
+            background-color:rgba(63,64,67,0.15);
         }
         p{
             font-family: 'Fira Sans', sans-serif;
@@ -1108,7 +1116,7 @@ html{
         }  
 
         #parallax{
-            background-image: url('../img/PRLLX\ CTA.png');;
+            background-image: url('../img/PRLLX-02.png');;
             height:420px;
             position:relative;
             display:flex;;
@@ -1395,14 +1403,14 @@ html{
             .container{
                 
                 .middle{
-                    height:65vh;
+                    height:60vh;
                     img{
                         width:300px;
                     }
                 }
                 .bottom{
-                    height:20vh;
-                    padding-bottom: 10px;
+                    height:40vh;
+                    padding-bottom: 50px;
                     
                 }
             }
@@ -1518,15 +1526,15 @@ html{
         }  
 
         #parallax{
-            height:420px;    
+            height:240px;    
             .filtro1{
-                height: 420px;
+                height:240px;
             }
             .filtro2{
-                height: 420px;
+                height:240px;
             }
             .filtro3{
-                height: 420px;
+                height:240px;
             }
             p{
                 font-size: 16pt;
@@ -1544,7 +1552,8 @@ html{
                 font-family: 'Fira Sans';
                 font-size:20pt;
                 color:#3f6c93;
-                padding:90px;
+                padding:0;
+                margin-top:20px;
             }
     
             .container{
@@ -1553,7 +1562,7 @@ html{
                     a{
                         margin:0 auto;
                         margin-top: 20px;
-                        margin-bottom:0;
+                        margin-bottom:35px;
                         color:#bdbdbd;
                         font-family: 'Fira Sans';
                         padding: 10px 40px;
@@ -1561,8 +1570,10 @@ html{
                 }
                 .row{
                     height:auto;
+                    margin:0;
+                    padding:0;
                     .col1{
-                        height: 200px;
+                        height: 370px;
                         position:relative;
                         img{
                             position:absolute;
@@ -1572,7 +1583,7 @@ html{
                         }
                     }
                     .col2{
-                        padding-left: 0;
+                        padding: 0;
                         font-size:14px;
                         color:#757575;
                         font-family: 'Fira Sans';   
@@ -1605,7 +1616,7 @@ html{
                         margin:0;
                         
                         padding:0;
-                        padding-top:100px;
+                        padding-top:150px;
                         
                         font-size:14px;
                         float:left;
@@ -1714,6 +1725,225 @@ html{
                 }   
             }
         } 
+        #tempo{
+            width:100%;
+            background-color:#fafafa;
+            position: relative;
+            padding:10px;
+            .prevtempo{
+                position: absolute;
+                top:45%;
+                left:10px;
+                transform: rotate(180deg);
+            }
+            .proxtempo{
+                position: absolute;
+                top:45%;
+                right:10px;
+            }
+            .container{
+                border-top:1px solid #cfd8dc;
+                padding: 20px 0;
+                .itens{
+                    width:80%;
+                    margin:0 auto;
+                    .item{
+                        .imagem{
+                            width:40px;
+                            height:40px;
+                            margin:0 auto;
+                        }
+                        .tempo{
+                            color:#4f89c8;
+                            font-family: 'Fira Sans';
+                            font-weight: semi-bold;
+                        }
+                    }
+                }
+            }
+        }
+        #formulario{
+            margin-top:o;
+            padding-top:40px;;
+            h1{
+
+            }
+        }
+        .links{
+            width:100%;
+            // display:flex;
+            // flex-direction: row;
+            // align-items: flex-start;
+            // justify-content: center;
+            padding-top:100px;
+            padding-bottom:100px;
+            position: relative;
+            background-color: $brancofundo;
+            .idatopo{
+                position: absolute;
+                bottom: 55px;
+                right:25px; 
+                img{
+                    width:50px;
+                }
+            }
+            .container{
+                .row{
+                    .row1{
+                        text-align: center;
+                        margin-top:12px;
+                    }
+                    .row2{
+                        text-align: left;
+                        hr{
+                            color:$laranja;
+                            background-color:$laranja;
+                            width:15%;
+                            height:1px;
+                            // margin-left:30px;
+                        }
+                        ul{
+                            list-style:none;
+                            color:$cinzafonte3;
+                            font-family:FiraSansLight;
+                            font-size:10pt;
+                            text-align: left;
+                            li{
+                                margin-top:7px;
+                                a{
+                                    color:$cinzafonte3;
+                                    :hover{
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .row3{
+                        display:block;
+                        text-align: center;
+                        margin-top:12px;
+                    }
+                    .row4{
+                        text-align: left;
+                        hr{
+                            color:$azulEscuro;
+                            background-color:$azulEscuro;
+                            width:15%;
+                            height:1px;
+                            // margin-left:30px;
+                        }
+                        ul{
+                            list-style:none;
+                            color:$cinzafonte3;
+                            font-family:FiraSansLight;
+                            font-size:10pt;
+                            text-align: left;
+                            li{
+                                margin-top:7px;
+                                a{
+                                    color:$cinzafonte3;
+                                    :hover{
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .col5{
+                        display:none;
+                        margin:0;
+                        padding:0;
+                        margin-top:10px;
+                        font-size:14px;
+                        float:left;
+                        font-family: 'Fira Sans';
+                        .vagagaragem{
+                            font-size:14px;
+                            float:left;
+                            font-family: 'Fira Sans';
+                        }
+                    }
+                }
+            }
+        }//links
+    
+        footer{
+            width:100%;
+            background:$azulEscuro2;
+            color:white;
+            .container{
+                padding-top:20px;
+                .end{
+                    width:100%;
+                    .icone{
+                        display:flex;
+                        align-items: center;
+                        flex-direction: row;
+                        justify-content: center;
+                        padding-bottom:20px;
+                        img{
+                            width:100px;
+                        }
+                    }
+                    .endereco{
+                        padding-bottom:20px;
+                        padding-top:20px;
+                        ul{
+                            list-style:none;
+                            text-align:left;
+                            padding-top: 0;
+                            margin-top: 0;
+                            :nth-child(1){
+                                list-style-image: url('../img/local.png');
+                            }
+                            :nth-child(2){
+                                list-style-image: url('../img/tel.png');
+                            }
+                            :nth-child(3){
+                                list-style-image: url('../img/carta.png');
+                            }
+                             li{
+                                 font-family:FiraSansLight;
+                                 font-size:20px;
+                                 margin-bottom:14px;
+                             }
+                        }
+                    }
+                }
+                .redes{
+                    text-align: right;
+                    padding-top: 40px;
+                    ul{
+                        list-style: none;
+                        img{
+                            width:20px;
+                            margin-bottom: 20px;
+                            margin-top:5px;
+                            text-align: right;
+                        }
+                    }
+                }
+                .copyright{
+                    border-top: 1px solid $azul;
+                    width:100%;
+                    padding-top:35px;
+                    padding-bottom:35px;
+                    font-family:FiraSansRegular;
+                    color:$za;
+                    span{
+                        font-family:FiraSansSemiBold;
+                    }
+                    #human2be {
+                        fill: white;
+                        max-width: 30px;
+                        float:right;
+                    }
+  
+                }
+    
+            }
+        }
     }
 }
 
@@ -1808,6 +2038,7 @@ html{
                             text-align: center;
                             padding-bottom:20px;
                             margin:0;
+                            margin-top:40px;
                         }
                         p{
                             font-size:12pt;
@@ -1843,10 +2074,18 @@ html{
                            color:#4b8fcb;
                            font-size: 12pt;
                            font-weight: bold;
-                           text-align: center;
+                           text-align: left;
+                           padding:0;
+                            margin:0;
+                           padding-left: 18px;
+                           display:inline;
                        }
                        .data2{
-                        text-align: center;
+                            text-align: left;
+                            padding:0;
+                            margin:0;
+                            padding-left: 18px;
+                            display:inline;
                        }
                     }
                 }
@@ -1887,17 +2126,17 @@ html{
         }  
 
         #parallax{
-            height:620px; 
-            background-size:200% 40%; 
+            height:250px; 
+            background-size:cover; 
 
             .filtro1{
-                height: 420px;
+                height:250px
             }
             .filtro2{
-                height: 420px;
+                height:250px
             }
             .filtro3{
-                height: 420px;
+                height:250px
             }
             p{
                 font-size: 12pt;
@@ -1912,7 +2151,9 @@ html{
         #plantas{
             width:100%;
             h3{
-                padding:20px;
+                padding:0;
+                font-size:20px;
+                margin-top:20px;
             }
     
             .container{
@@ -1929,7 +2170,7 @@ html{
                 .row{
                     padding-bottom:50px;
                     .col1{
-                        height: 200px;
+                        height: 150px;
                         position:relative;
                         img{
                             position:absolute;
@@ -1940,6 +2181,8 @@ html{
                         }
                     }
                     .col2{
+                        margin-top:20px;
+                        padding-top:0;
                         padding-left: 25px;
                         font-size:14px;
                         color:#757575;
@@ -2023,7 +2266,7 @@ html{
                 background-color:#fafafa;
                 margin:0;
                 .mapa{
-                    height:380px;
+                    height:300px;
                     margin:0;
                     padding:0;
                     margin-top:100px;
@@ -2154,18 +2397,18 @@ html{
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
-            background-size:300% 80%;
+            background-size:350% 80%;
             h1{
                 font-family: FiraSansLight;
                 text-align: left;
                 color:$branco;
-                font-size:26pt;
+                font-size:20pt;
             }
             h2{
                 font-family: FiraSansRegular,sans-serif;
                 text-align: left;
                 color:$branco;
-                font-size:13pt;
+                font-size:11pt;
             }
             .box{
                 width:100%;
@@ -2307,6 +2550,9 @@ html{
                         flex-direction: row;
                         justify-content: center;
                         padding-bottom:20px;
+                        img{
+                            width:100px;
+                        }
                     }
                     .endereco{
                         padding-bottom:20px;
@@ -2366,6 +2612,7 @@ html{
                     padding-bottom:15px;
                     font-family:FiraSansRegular;
                     color:$za;
+                    font-size:10px;
                     span{
                         font-family:FiraSansSemiBold;
                     }
