@@ -10,16 +10,20 @@
 html{
     scroll-behavior: smooth;
 }
+.erro{
+    color:red;
+}
  body{
     background-color:white;
-    .alert-success{
+    .alert-success, .alert-danger{
         position:fixed;
         width:300xp;
         bottom:20px;
         right:20px;
         z-index:10;
         display:none;
-    }   
+    } 
+      
     .topHeader{
             width:100%;
             
@@ -62,6 +66,7 @@ html{
         background-size: cover;
         position:relative;
         background-position: center;
+        background-attachment: fixed;
         .filtroA{
             background-color: rgba(33,33,33,0.2);
             width: 100%;
@@ -355,6 +360,7 @@ html{
                         font-size:14px;
                         float:left;
                         font-family: 'Fira Sans';
+                        margin: 0;
                     }
                     font-size:14px;
                     float:left;
@@ -367,6 +373,7 @@ html{
                         position:absolute;
                         top:0;
                         left:0;
+                        width: 1120px;
                     }
                 }
 
@@ -545,6 +552,11 @@ html{
                     position: relative;
                     margin-top: 2.25rem;
                     margin-bottom: 2.25rem;
+                    .erro{
+                        color:red;
+                        display:none;
+                        font-family:'Fira Sans';
+                    }
                   }
                   
                   

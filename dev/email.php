@@ -55,9 +55,9 @@ $compra = $_POST['compra'];
 
     $mail->Port = 587; // Porta de envio de e-mails do Gmail
 
-    $mail->Username = 'dawexemplo2014@gmail.com';
+    $mail->Username = 'zecon.polaris@gmail.com';
 
-    $mail->Password = 'senha52014';
+    $mail->Password = 's3nh4n40s1mpl3s';
 
     $mail->CharSet = "utf-8";
 
@@ -66,7 +66,7 @@ $compra = $_POST['compra'];
     $mail->SetFrom($email);
 	
 // Endereço de destino do email
-    $mail->AddAddress('trexvion@gmail.com'); //zecon@zecon.eng.br
+    $mail->AddAddress('zecon@zecon.eng.br'); //zecon@zecon.eng.br
 	
 // Endereço para resposta
 	
@@ -74,7 +74,7 @@ $compra = $_POST['compra'];
 
 // Assunto e Corpo do email
 
-    $mail->Subject = "Teste";
+    $mail->Subject = "Tenho Interesse";
 
     
     $mensagem = "<br> 

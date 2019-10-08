@@ -2,18 +2,44 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#fff">
+
+    <title>Residencial Polaris</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="http://polaris.zecon.com.br" />
+
+    <!-- SEO META TAGS -->
+    <meta name="description" content="Tudo sobre o residencial Polaris">
+    <meta name="keywords" content="zecon, zechlinski, engenharia, construção, polaris" >
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Residencial Polaris" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta property="og:title" content="Residencial Polaris" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://polaris.zecon.com.br" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" >
+    <meta property="og:site_name" content="Residencial Polaris" />
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="assets/css/slick/slick.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
     <div class="alert alert-success" role="alert">
-        Email enviado com sucesso!
+        Mensagem enviada com sucesso!
+    </div>
+    <div class="alert alert-danger" role="alert">
+        Não foi possivel enviar a mensagem!
     </div>
     <!-- header -->
     <nav class=" topHeader" id="topHeader">
@@ -118,7 +144,7 @@
 
         <p>Tenha mais espaço
             <br> no lugar certo</p>
-        <a href="#formulario" class="btn btn-warning" alt="tenho interesse">Tenho interesse</a>
+        <a href="#formulario" class="btn btn-warning" alt="TENHO INTERESSE">TENHO INTERESSE</a>
 
         <div class="filtro1">
 
@@ -343,25 +369,28 @@
                     <div class="form-group">
                         <input type="text" required="required" name="nome" class="nome"/>
                         <label for="input" class="control-label ">Nome</label><i class="bar"></i>
+                        <div class="erroNome erro"></div>
                     </div>
 
                     <div class="form-group">
                         <input type="text" required="required" name="email" class="email"/>
-                        <label for="input" class="control-label ">Email</label><i class="bar"></i>
+                        <label for="email" class="control-label ">Email</label><i class="bar"></i>
+                        <div class="erroEmail erro"></div>
                     </div>
 
                     <div class="form-group">
                         <input type="text" required="required" name="whatsapp" class="whatsapp"/>
                         <label for="input" class="control-label ">WhatsApp</label><i class="bar"></i>
+                        <div class="erroWhatsapp erro"></div>
                     </div>
                     <h3>Você pretende comprar imóvel quando?</h3>
                     <div>
                         <!-- <input class="form-control" type="date" placeholder="selecione" min="2019-10-02"> -->
                         <select name="compra" class="compra">
-                            <option>Selecione</option>
                             <option value="sim">sim</option>
                             <option value="não">não</option>
                         </select>
+                        <div class="erroCompra erro"></div>
                     </div>
                     <div class="cem">
                         <input type="submit" value="ENVIAR" class="btn btn-outline-dark enviar" name="enviar" title="enviar formulario" alt="enviar formulario">
@@ -546,13 +575,14 @@
     <!-- rodapé  -->
 
     <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/jquery.mask.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/anime.min.js"></script>
     <script src="assets/js/slick/slick.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/axios.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script> 
 </body>
 
 </html>
